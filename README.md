@@ -1,4 +1,4 @@
-# 🚀 Portofolio Personal — Alex Pratama
+# 🚀 Portofolio Personal — Ibnu Fathan
 
 Website portofolio personal yang minimalis, modern, dan responsif — dibangun dengan HTML5 dan CSS3 murni tanpa framework eksternal.
 
