@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="id" data-theme="light">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description"
+    content="Portofolio pribadi Ibnu Fathan - Frontend Developer & UI/UX Designer yang berpengalaman membangun aplikasi web modern dan elegan." />
+  <meta name="keywords"
+    content="frontend developer, UI/UX designer, web developer, HTML, CSS, JavaScript, portofolio" />
+  <meta name="author" content="Ibnu Fathan" />
+  <meta property="og:title" content="Ibnu Fathan — Frontend Developer & Designer" />
+  <meta property="og:description" content="Saya membangun pengalaman digital yang indah dan fungsional." />
+  <meta property="og:type" content="website" />
+
+  <title>Ibnu Fathan — Frontend Developer & Designer</title>
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon inline SVG as data URI -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💻</text></svg>" />
+</head>
+
+<body>
+
+  <!-- ==========================================
+       LOADING SCREEN
+       ========================================== -->
+  <div id="loading-screen" aria-hidden="true">
+    <div class="loader-logo">&lt;Ibnu /&gt;</div>
+    <div class="loader-bar">
+      <div class="loader-bar-fill"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================
+       NAVBAR
+       ========================================== -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="navbar-inner">
+      <!-- Logo -->
+      <a href="#home" class="navbar-logo" aria-label="Home">&lt;Ibnu<span>/&gt;</span></a>
+
+      <!-- Desktop Navigation -->
+      <nav class="navbar-nav" role="navigation" aria-label="Main navigation">
+        <a href="#home" id="nav-home">Home</a>
+        <a href="#about" id="nav-about">About</a>
+        <a href="#projects" id="nav-projects">Projects</a>
+      </nav>
+
+      <!-- Navbar Actions -->
+      <div class="navbar-actions">
+        <!-- Dark Mode Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark/light mode">
+          🌙
+        </button>
+        <!-- Hamburger Menu Button -->
+        <button class="hamburger" id="hamburger" aria-label="Toggle mobile menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+    <a href="#home" class="mobile-nav-link">🏠 Home</a>
+    <a href="#about" class="mobile-nav-link">👤 About</a>
+    <a href="#projects" class="mobile-nav-link">💼 Projects</a>
+  </nav>
+
+  <!-- ==========================================
+       MAIN CONTENT
+       ========================================== -->
+  <main>
+
+    <!-- ==========================================
+         HERO SECTION
+         ========================================== -->
+    <section class="hero" id="home" aria-label="Hero section">
+      <!-- Background decorative elements -->
+      <div class="hero-bg-blob hero-bg-blob-1" aria-hidden="true"></div>
+      <div class="hero-bg-blob hero-bg-blob-2" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <!-- Status Badge -->
+        <div class="hero-badge">
+          <div class="dot"></div>
+          Tersedia untuk proyek baru
+        </div>
+
+        <!-- Main Heading -->
+        <h1 class="hero-title">
+          Halo, Saya<br />
+          <span class="name-highlight">Ibnu Fathan</span>
+        </h1>
+
+        <!-- Subtitle -->
+        <div class="hero-subtitle-wrapper">
+          <span class="hero-subtitle">Frontend Developer</span>
+          <span class="hero-subtitle-badge">& UI/UX Designer</span>
+        </div>
+
+        <!-- Description -->
+        <p class="hero-description">
+          Saya membangun pengalaman digital yang indah, cepat, dan mudah digunakan.
+          Berfokus pada detail dan performa untuk menciptakan produk web yang berkesan.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="cta-projects">
+            <span>💼</span> Lihat Proyek
+          </a>
+        </div>
+
+        <!-- Stats Row -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number">3+</div>
+            <div class="stat-label">Tahun Pengalaman</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">20+</div>
+            <div class="stat-label">Proyek Selesai</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">15+</div>
+            <div class="stat-label">Klien Puas</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="hero-scroll" aria-hidden="true">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT SECTION
+         ========================================== -->
+    <section class="about section" id="about" aria-label="About section">
+      <div class="container">
+        <div class="about-grid">
+
+          <!-- Profile Image Column -->
+          <div class="about-image-wrapper animate-scroll-scale">
+            <div class="about-image-outer">
+              <div class="about-image-ring" aria-hidden="true"></div>
+              <div class="about-image-ring-2" aria-hidden="true"></div>
+              <img src="images/ibnu.jpeg" alt="Foto profil Ibnu Fathan" class="about-image" loading="lazy" />
+
+              <!-- Floating badges -->
+              <div class="about-badge about-badge-1" aria-label="3+ tahun pengalaman">
+                <span class="about-badge-icon">🏆</span>
+                <div>
+                  <div style="font-weight:700; font-size:0.9rem;">3+ Tahun</div>
+                  <div style="font-size:0.75rem; color:var(--color-text-secondary);">Pengalaman</div>
+                </div>
+              </div>
+
+              <div class="about-badge about-badge-2" aria-label="30 proyek selesai">
+                <span class="about-badge-icon">✨</span>
+                <div>
+                  <div style="font-weight:700; font-size:0.9rem;">30+ Proyek</div>
+                  <div style="font-size:0.75rem; color:var(--color-text-secondary);">Diselesaikan</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Text Column -->
+          <div class="about-content animate-scroll-right">
+            <span class="section-tag">Tentang Saya</span>
+            <h2>
+              Saya merancang & membangun<br />
+              <span class="gradient-text">pengalaman digital</span> yang berkesan
+            </h2>
+
+            <p>
+              Saya adalah seorang mahasiswa <strong>Teknologi Informasi</strong> dari Universitas Bina Sarana
+              Informatika
+              yang punya passion besar di dunia web development dan desain digital.
+            </p>
+
+            <p>
+              Sebagai seorang <strong>UI/UX Designer</strong> sekaligus <strong>Front-End Developer</strong>,
+              saya tidak hanya fokus pada bagaimana sebuah website terlihat keren (visual),
+              tapi juga bagaimana website tersebut terasa seamless saat digunakan (pengalaman pengguna)
+              dan memiliki performa kode yang bersih serta optimal.
+            </p>
+
+            <!-- Highlights -->
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <span class="highlight-icon">📍</span>
+                Bogor, Indonesia
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🎓</span>
+                S1 Tekonologi Informasi
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">💼</span>
+                Open to Work
+              </div>
+              <div class="highlight-item">
+                <span class="highlight-icon">🌐</span>
+                Freelance Available
+              </div>
+            </div>
+
+            <!-- Download CV Button -->
+            <a href="cv.pdf" class="btn btn-primary" id="about-cta" download>
+              <span>📄</span> Download CV
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         PROJECTS SECTION
+         ========================================== -->
+    <section class="projects section" id="projects" aria-label="Projects section">
+      <div class="container">
+        <div class="section-header animate-scroll">
+          <span class="section-tag">Portofolio</span>
+          <h2 class="section-title">Proyek Terbaru Saya</h2>
+          <p class="section-subtitle">
+            Koleksi proyek terbaik yang mencerminkan keahlian dan dedikasi saya
+            dalam membangun produk digital berkualitas.
+          </p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="projects-filter animate-scroll delay-100">
+          <button class="filter-btn active" data-filter="all" id="filter-all">Semua</button>
+          <button class="filter-btn" data-filter="web" id="filter-web">Web App</button>
+          <button class="filter-btn" data-filter="mobile" id="filter-mobile">Mobile</button>
+          <button class="filter-btn" data-filter="design" id="filter-design">UI/UX</button>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid" id="projects-grid">
+
+          <!-- Project Card 1 -->
+          <article class="project-card animate-scroll" data-category="web">
+            <div class="project-img-wrapper">
+              <img src="images/projects/project1.jpg" alt="Dashboard Analytics - Aplikasi analitik data real-time"
+                class="project-img" loading="lazy" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="Lihat demo Dashboard Analytics">🔗 Demo</a>
+                  <a href="#" class="project-link" aria-label="Lihat kode sumber Dashboard Analytics">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                    Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-category">Web Application</p>
+              <h3 class="project-title">Dashboard Analytics Pro</h3>
+              <p class="project-desc">
+                Platform analitik data real-time dengan visualisasi interaktif,
+                laporan otomatis, dan dukungan multi-pengguna.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">Chart.js</span>
+                <span class="tag">Node.js</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 2 -->
+          <article class="project-card animate-scroll delay-200" data-category="mobile">
+            <div class="project-img-wrapper">
+              <img src="images/projects/project2.jpg" alt="ShopEasy - Aplikasi e-commerce mobile" class="project-img"
+                loading="lazy" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="Lihat demo ShopEasy">🔗 Demo</a>
+                  <a href="#" class="project-link" aria-label="Lihat kode sumber ShopEasy">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                    Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-category">Mobile UI</p>
+              <h3 class="project-title">ShopEasy Mobile App</h3>
+              <p class="project-desc">
+                Aplikasi e-commerce mobile dengan UX yang intuitif, sistem
+                pembayaran terintegrasi, dan notifikasi real-time.
+              </p>
+              <div class="project-tags">
+                <span class="tag">React Native</span>
+                <span class="tag">Redux</span>
+                <span class="tag">Firebase</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project Card 3 -->
+          <article class="project-card animate-scroll delay-300" data-category="design">
+            <div class="project-img-wrapper">
+              <img src="images/projects/project3.jpg" alt="CreativeFlow - Landing page modern" class="project-img"
+                loading="lazy" />
+              <div class="project-overlay">
+                <div class="project-links">
+                  <a href="#" class="project-link" aria-label="Lihat demo CreativeFlow">🔗 Demo</a>
+                  <a href="#" class="project-link" aria-label="Lihat kode sumber CreativeFlow">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                    </svg>
+                    Code
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="project-body">
+              <p class="project-category">UI/UX Design</p>
+              <h3 class="project-title">CreativeFlow Landing Page</h3>
+              <p class="project-desc">
+                Landing page modern dengan animasi scroll yang memukau,
+                optimasi SEO, dan konversi yang tinggi.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">GSAP</span>
+                <span class="tag">Figma</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo">Ibnu<span></span></div>
+          <div class="footer-tagline">Building beautiful digital experiences ✨</div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="footer-socials" aria-label="Social media links">
+          <a href="https://github.com/Ibnufthnn" target="_blank" rel="noopener noreferrer" class="social-link"
+            aria-label="GitHub Profile" title="GitHub">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+
+          <a href="https://www.instagram.com/ibnufthnnn" target="_blank" rel="noopener noreferrer" class="social-link"
+            aria-label="Instagram Profile" title="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+            </svg>
+          </a>
+
+
+          <a href="mailto:pakuan0606@gmail.com" class="social-link" aria-label="Send email" title="Email">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="footer-copy">
+          &copy;2026 <a href="#home">Ibnu Fathan</a>. Dibuat dengan di Bogor.
+        </p>
+        <nav class="footer-nav" aria-label="Footer navigation">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       JAVASCRIPT - Minimal & Vanilla
+       ========================================== -->
+  <script>
+    /* ============================================
+       LOADING SCREEN
+       ============================================ */
+    window.addEventListener('load', () => {
+      const loadingScreen = document.getElementById('loading-screen');
+      setTimeout(() => {
+        loadingScreen.classList.add('hidden');
+        // Remove from DOM after transition
+        loadingScreen.addEventListener('transitionend', () => {
+          loadingScreen.remove();
+        }, { once: true });
+      }, 1600);
+    });
+
+    /* ============================================
+       NAVBAR - Scroll shadow & active state
+       ============================================ */
+    const navbar = document.getElementById('navbar');
+
+    const handleNavbarScroll = () => {
+      if (window.scrollY > 20) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    };
+
+    window.addEventListener('scroll', handleNavbarScroll, { passive: true });
+
+    /* ============================================
+       HAMBURGER MENU
+       ============================================ */
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobile-nav');
+    let mobileMenuOpen = false;
+
+    hamburger.addEventListener('click', () => {
+      mobileMenuOpen = !mobileMenuOpen;
+      hamburger.classList.toggle('active', mobileMenuOpen);
+      hamburger.setAttribute('aria-expanded', mobileMenuOpen);
+      mobileNav.classList.toggle('open', mobileMenuOpen);
+    });
+
+    // Close mobile nav on link click
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenuOpen = false;
+        hamburger.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileNav.classList.remove('open');
+      });
+    });
+
+    // Close mobile nav on outside click
+    document.addEventListener('click', (e) => {
+      if (mobileMenuOpen && !mobileNav.contains(e.target) && !hamburger.contains(e.target)) {
+        mobileMenuOpen = false;
+        hamburger.classList.remove('active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileNav.classList.remove('open');
+      }
+    });
+
+    /* ============================================
+       DARK MODE TOGGLE
+       ============================================ */
+    const themeToggle = document.getElementById('theme-toggle');
+    const html = document.documentElement;
+
+    // Check saved preference or system preference
+    const savedTheme = localStorage.getItem('theme');
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const initialTheme = savedTheme || (systemDark ? 'dark' : 'light');
+
+    html.setAttribute('data-theme', initialTheme);
+    themeToggle.textContent = initialTheme === 'dark' ? '☀️' : '🌙';
+
+    themeToggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      const next = current === 'dark' ? 'light' : 'dark';
+      html.setAttribute('data-theme', next);
+      themeToggle.textContent = next === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('theme', next);
+    });
+
+    /* ============================================
+       INTERSECTION OBSERVER - Scroll Animations
+       ============================================ */
+    const animateObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Unobserve after animation
+          animateObserver.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    // Observe all animation targets
+    document.querySelectorAll(
+      '.animate-scroll, .animate-scroll-left, .animate-scroll-right, .animate-scroll-scale'
+    ).forEach(el => animateObserver.observe(el));
+
+    /* ============================================
+       PROJECT FILTER
+       ============================================ */
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active button
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.getAttribute('data-filter');
+
+        projectCards.forEach((card, index) => {
+          const category = card.getAttribute('data-category');
+          const shouldShow = filter === 'all' || category === filter;
+
+          if (shouldShow) {
+            card.style.display = '';
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            setTimeout(() => {
+              card.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+              card.style.opacity = '1';
+              card.style.transform = 'translateY(0)';
+            }, index * 80);
+          } else {
+            card.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(10px)';
+            setTimeout(() => {
+              card.style.display = 'none';
+            }, 300);
+          }
+        });
+      });
+    });
+
+    /* ============================================
+       SMOOTH ACTIVE NAV LINK on SCROLL
+       ============================================ */
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navbar-nav a');
+
+    const activeNavObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(link => {
+            link.style.color = '';
+            if (link.getAttribute('href') === '#' + entry.target.id) {
+              link.style.color = 'var(--color-primary)';
+            }
+          });
+        }
+      });
+    }, { threshold: 0.4 });
+
+    sections.forEach(section => activeNavObserver.observe(section));
+  </script>
+
+</body>
+
+</html>
